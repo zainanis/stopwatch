@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            text-align: center;
+        }
+
+        .time h1 {
+
+            display: inline-block;
+            border-radius: 50px;
+            background-color: white;
+
+        }
+        
+
+        div h2 {
+
+            display: inline-block;
+            width: 100px;
+            background-color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        
+        <div  class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 time">
+            <h1 id="min" >0</h1>
+            <h1 id="sec">0</h1>
+            <h1 id="msec">0</h1>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 "><button onclick="start()" id="strtBttn">Start</button></div>
+        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 "> <button onclick="stop()">Stop</button></div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 "><button onclick="reset()">Reset</button></div>
+    </div>
+    <div>
+        <h2 id="display"></h2>
+    </div>
+
+</body>
+<script src="timer.js"></script>
+
+</html>
